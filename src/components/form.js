@@ -121,7 +121,7 @@ const MainForm = () => {
         sector: dataCollection?.[0]?.data?.selectedSector || "",
       });
     }
-  }, [loading]);
+  }, [loading,dataCollection,formik]);
 
   if (loading) {
     return (
